@@ -20,6 +20,7 @@ import { useState, useEffect } from 'react'
 import type { Address } from 'viem'
 import { IconCopy } from 'app/components/icons'
 import { useQRCode } from 'app/utils/useQRCode'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 function CopyAddressDialog({ isOpen, onClose, onConfirm }) {
   return (
